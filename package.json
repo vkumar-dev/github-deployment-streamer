@@ -1,0 +1,41 @@
+{
+  "name": "github-deployment-streamer",
+  "version": "1.0.0",
+  "description": "🚀 Real-time deployment monitoring for GitHub Actions across all your repositories",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "gh-streamer": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js --verbose"
+  },
+  "keywords": [
+    "github",
+    "github-actions",
+    "deployment",
+    "monitoring",
+    "cli",
+    "real-time",
+    "streaming",
+    "github-cli"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/github-deployment-streamer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/github-deployment-streamer/issues"
+  },
+  "homepage": "https://github.com/yourusername/github-deployment-streamer#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0"
+  }
+}
