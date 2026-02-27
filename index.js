@@ -345,8 +345,8 @@ async function scanRepos(showMode = 'first') {
     console.log(chalk.cyan('  ┌─ Deployment Runs ──────────────────────────────────────┐'));
     console.log(chalk.cyan('  │'));
 
-    // Display and track runs
-    for (const run of runsToDisplay) {
+    // Display and track runs (reverse order: oldest at top, newest at bottom)
+    for (const run of runsToDisplay.reverse()) {
       const runId = `${run.repoFullName}#${run.number}`;
       seenRuns.add(runId);
 
